@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.riskofrain2survivors.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_fourthFragment"
+            app:destination="@id/fourthFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_fithFragment"
+            app:destination="@id/fithFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_sixthFragment"
+            app:destination="@id/sixthFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_seventhFragment"
+            app:destination="@id/seventhFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_eighthFragment"
+            app:destination="@id/eighthFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_ninthFragment"
+            app:destination="@id/ninthFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_ninthFragment2"
+            app:destination="@id/ninthFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_tenthFragment"
+            app:destination="@id/tenthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.riskofrain2survivors.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.example.riskofrain2survivors.ThirdFragment"
+        android:label="ThirdFragment" >
+        <action
+            android:id="@+id/action_thirdFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fourthFragment"
+        android:name="com.example.riskofrain2survivors.FourthFragment"
+        android:label="FourthFragment" >
+        <action
+            android:id="@+id/action_fourthFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fithFragment"
+        android:name="com.example.riskofrain2survivors.FithFragment"
+        android:label="fragment_fith"
+        tools:layout="@layout/fragment_fith" >
+        <action
+            android:id="@+id/action_fithFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sixthFragment"
+        android:name="com.example.riskofrain2survivors.SixthFragment"
+        android:label="activity_sixth"
+        tools:layout="@layout/activity_sixth" >
+        <action
+            android:id="@+id/action_sixthFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seventhFragment"
+        android:name="com.example.riskofrain2survivors.SeventhFragment"
+        android:label="fragment_seventh"
+        tools:layout="@layout/fragment_seventh" >
+        <action
+            android:id="@+id/action_seventhFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eighthFragment"
+        android:name="com.example.riskofrain2survivors.EighthFragment"
+        android:label="fragment_eighth"
+        tools:layout="@layout/fragment_eighth" >
+        <action
+            android:id="@+id/action_eighthFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ninthFragment"
+        android:name="com.example.riskofrain2survivors.NinthFragment"
+        android:label="fragment_ninth"
+        tools:layout="@layout/fragment_ninth" >
+        <action
+            android:id="@+id/action_ninthFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tenthFragment"
+        android:name="com.example.riskofrain2survivors.TenthFragment"
+        android:label="fragment_tenth"
+        tools:layout="@layout/fragment_tenth" >
+        <action
+            android:id="@+id/action_tenthFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+</navigation>

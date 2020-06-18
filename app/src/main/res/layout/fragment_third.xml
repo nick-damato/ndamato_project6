@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdFragment"
+    android:background="@drawable/artificer_background">
+
+    <ScrollView
+        android:layout_width="350dp"
+        android:layout_height="600dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/artificer_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/artificer_title"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/artificer_model"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:contentDescription="@string/artifier_model"
+                android:src="@drawable/artificer_model" />
+
+            <TextView
+                android:id="@+id/artificer_health_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/artificer_health_title"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/artificer_health"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/artificer_health_regen"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/artificer_health_regen_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/artificer_health_regen_title"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/artificer_health_regen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/artifier_health_regen"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/artificer_damage_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/damage_title"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/artificer_damage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/artificer_damage"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/artificer_armor_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/artificer_armor_title"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/artificer_armor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/artificer_armor"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Spacer"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:id="@+id/artificer_unlock_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/artificer_unlock_title"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/artificer_unlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/artificer_unlock"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/spacer2"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:id="@+id/artificer_gameplay_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/artifier_gameplay_title"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/artificer_gameplay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/artificer_gameplay_link"
+                android:autoLink="all"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/spacer3"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

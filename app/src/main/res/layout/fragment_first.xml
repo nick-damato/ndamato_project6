@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/acrid"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@android:color/darker_gray"
+        android:contentDescription="@string/acrid"
+        android:src="@drawable/acrid"
+        app:layout_constraintBottom_toTopOf="@+id/engineer"
+        app:layout_constraintEnd_toStartOf="@+id/artificer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/acrid" />
+
+    <ImageButton
+        android:id="@+id/artificer"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@android:color/darker_gray"
+        android:contentDescription="@string/artificer"
+        android:src="@drawable/artificer"
+        app:layout_constraintBottom_toTopOf="@+id/huntress_title"
+        app:layout_constraintEnd_toStartOf="@+id/commando"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/artificer" />
+
+    <ImageButton
+        android:id="@+id/commando"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@android:color/darker_gray"
+        android:contentDescription="@string/commando"
+        app:layout_constraintBottom_toTopOf="@+id/loader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/commando" />
+
+    <ImageButton
+        android:id="@+id/engineer"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@android:color/darker_gray"
+        android:contentDescription="@string/engineer"
+        app:layout_constraintBottom_toTopOf="@+id/mercenary"
+        app:layout_constraintEnd_toStartOf="@+id/huntress_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acrid"
+        app:srcCompat="@drawable/engineer" />
+
+    <ImageButton
+        android:id="@+id/huntress_title"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@android:color/darker_gray"
+        android:contentDescription="@string/huntress"
+        app:layout_constraintBottom_toTopOf="@+id/mul_t"
+        app:layout_constraintEnd_toStartOf="@+id/loader"
+        app:layout_constraintTop_toBottomOf="@+id/artificer"
+        app:srcCompat="@drawable/huntress" />
+
+    <ImageButton
+        android:id="@+id/loader"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@android:color/darker_gray"
+        android:contentDescription="@string/loader"
+        app:layout_constraintBottom_toTopOf="@+id/rex"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/commando"
+        app:srcCompat="@drawable/loader" />
+
+    <ImageButton
+        android:id="@+id/mercenary"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@android:color/darker_gray"
+        android:contentDescription="@string/mercenary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mul_t"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/engineer"
+        app:srcCompat="@drawable/mercenary" />
+
+    <ImageButton
+        android:id="@+id/mul_t"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@android:color/darker_gray"
+        android:contentDescription="@string/mul_t"
+        android:src="@drawable/mul_t"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rex"
+        app:layout_constraintTop_toBottomOf="@+id/huntress_title"
+        tools:srcCompat="@drawable/mul_t" />
+
+    <ImageButton
+        android:id="@+id/rex"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@android:color/darker_gray"
+        android:contentDescription="@string/rex"
+        android:src="@drawable/rex"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loader"
+        tools:srcCompat="@drawable/rex" />
+
+    <TextView
+        android:id="@+id/acrid_nametag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/acrid"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acrid" />
+
+    <TextView
+        android:id="@+id/artificer_nametag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/artificer"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/huntress_title"
+        app:layout_constraintStart_toEndOf="@+id/acrid_nametag"
+        app:layout_constraintTop_toBottomOf="@+id/artificer"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/commando_nametag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/commando"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/artificer_nametag"
+        app:layout_constraintTop_toBottomOf="@+id/commando" />
+
+    <TextView
+        android:id="@+id/engineer_nametag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/engineer"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/engineer" />
+
+    <TextView
+        android:id="@+id/huntress_nametag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/huntress"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/loader_nametag"
+        app:layout_constraintStart_toEndOf="@+id/engineer_nametag"
+        app:layout_constraintTop_toBottomOf="@+id/huntress_title" />
+
+    <TextView
+        android:id="@+id/loader_nametag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="45dp"
+        android:text="@string/loader"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loader" />
+
+    <TextView
+        android:id="@+id/mercenary_nametag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/mercenary"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mercenary" />
+
+    <TextView
+        android:id="@+id/mult_t_nametag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="45dp"
+        android:text="@string/mul_t"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/rex_nametag"
+        app:layout_constraintStart_toEndOf="@+id/mercenary_nametag"
+        app:layout_constraintTop_toBottomOf="@+id/mul_t" />
+
+    <TextView
+        android:id="@+id/rex_nametag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="55dp"
+        android:text="@string/rex"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rex" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

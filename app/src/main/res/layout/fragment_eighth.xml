@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EighthFragment"
+    android:background="@drawable/mercenary_background">
+
+    <ScrollView
+        android:layout_width="350dp"
+        android:layout_height="600dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/mercenary_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mercenary_title"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/mercenary_model"
+                android:src="@drawable/mercenary_model" />
+
+            <TextView
+                android:id="@+id/mercenary_health_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mercenary_health_title"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mercenary_health"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mercenary_health"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mercenary_health_regen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mercenary_health_regen_title"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mercenary_helath_regen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mercenary_health_regen"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mercenary_damage_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mercenary_damage_title"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mercenary_damage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/percenary_damage"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mercenary_armor_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mercenary_armor_title"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mercenary_armor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mercenary_armor"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/spacer"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/mercenary_unlock_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mercenary_unlock_title"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mercenary_unlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mercenary_unlock"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/spacer2"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:id="@+id/mercenary_gameplay_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mercenary_gameplay_title"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mercenary_gameplay_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mercenary_gameplay_link"
+                android:autoLink="all"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/spacer3"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
